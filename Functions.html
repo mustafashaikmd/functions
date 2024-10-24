@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h3>1.Funtions without Parameters</h3>
+    <h3>2.Funtions with Parameters</h3>
+    <h3>3.Function with return statement</h3>
+    <h3>4.Combining Functions</h3>
+    <h3>5.Function with default parameter</h3>
+</body>
+<script>
+    //Funtion without Parameters
+    console.log('------Funtion without Parameters-------')
+    function greet(){
+        console.log("Hello World")
+    }
+    greet()
+
+    console.log('---------------------------------------')
+    //Funtions with Parameters
+    console.log('--------Funtions with Parameters-------')
+    function addNumbers(a,b){
+        sum=a+b
+        console.log('Sum of given numbers '+a+' and '+b+' is: '+sum)
+    }
+    addNumbers(5,6)
+    addNumbers(15.5,15.9)
+
+    console.log('---------------------------------------')
+    //Function with return statement
+    console.log('-----Function with return statement----')
+    function multiply(x,y){
+        return x*y
+    }
+    let result= multiply(3,4)
+    console.log('The product of two given numbers is: '+result)
+    console.log('---------------------------------------')
+
+    //Combining Functions
+    console.log('----------Combining Functions----------')
+    function calculateRectangleArea(l,w){
+        let area = multiply(l,w)
+        return area
+    }
+    console.log('Area of the Rectangle is '+calculateRectangleArea(5,6))
+    console.log('---------------------------------------')
+
+    //Funtions with default paramter
+    console.log('----Funtions with default paramter-----')
+    function greetUser(name='Guest'){
+        return `Hello, ${name}!.`
+    }
+    console.log('Without passing any argument: '+greetUser())
+    console.log('With passing argument: '+greetUser('Mustafa'))
+</script>
+</html>
